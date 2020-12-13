@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+html{
+  overflow: hidden;
+}
+body {
+	background: linear-gradient(-45deg, #f5f5f5, #9e9e9e, #f3f3f3, #b6b6b6);
+	background-size: 400% 400%;
+    animation: gradient 5s ease ;
+    color: white;
+    font-family: 'Syncopate', sans-serif;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+#home{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-size: 50px;
+}
+/* title */
+#name {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 100px;
+	margin: 0 auto;
+	margin-top: 10vh;
+    width: 600px;
+}
+svg {
+    letter-spacing: 0.15em;
+    width: 100%;
+    height: 100%;
+  }
+  
+svg text {
+    fill: #fff;
+    stroke: #fff;
+    fill-opacity: 1;
+    stroke-width: 0;
+    stroke-dasharray: 100% 0;
+    animation: stroke-offset 4s ease-out ; /* 텍스트 채워지는 애니메이션*/
+    font-size: 5em;
+}
+@keyframes stroke-offset {
+    0% {
+      fill-opacity: 0;
+      stroke-width: 0;
+      stroke-dasharray: 0% 100%;
+    }
+    25% {
+      stroke-width: 3px;
+    }
+    50% {
+      fill-opacity: 0;
+    }
+    75% {
+      stroke-width: 3px;
+    }
+    100% {
+      stroke-width: 0;
+    }
+}
+/* image slide */
+.gallery{position:relative;width:100vw;height:70vh;}
+.view{overflow:hidden;position:relative;width:100%;height:100%}
+.view-container{position:absolute;top:0;left:0;width:100%;height:100%}
+.view-container::after{content:'';display:block;position:relative;clear:both}
+.view-item{position:relative;float:left;width:100%;height:100%}
+.view-item img{display:block;}
+.menu ul li {list-style: none;}
+.menu button{position:absolute;z-index:50;top:50%;width:52px;height:52px;margin-top:-100px;border:4px solid #fff;border-radius:52px;background-color:transparent;cursor:pointer;-webkit-transition:background-color 180ms ease-in-out}
+.menu button:hover{background-color:rgba(0,0,0,0.5)}
+.menu button::after{display:inline-block;position:relative;text-decoration:none;color:inherit;font-family:'SF Pro Icons';font-size:inherit;font-weight:inherit;font-style:normal;line-height:1;z-index:1}
+.menu button.disabled{display:none}
+.menu button.prev{left:50px}
+.menu button.next{right:50px}
+.menu button.prev::after{content:"";display:block;position:absolute;top:50%;left:50%;margin-left:2px;padding:5px;border-right:4px solid #fff;border-bottom:4px solid #fff;transform:translateX(-50%) translateY(-50%) rotate(135deg)}
+.menu button.next::after{content:"";display:block;position:absolute;top:50%;left:50%;margin-left:-2px;padding:5px;border-right:4px solid #fff;border-bottom:4px solid #fff;transform:translateX(-50%) translateY(-50%) rotate(-45deg)}
+
+/* contents */
+.projectstudio {display: flex; justify-content: center;padding-bottom: 150px;padding-top: 50px;}
+.projectstudio .img {padding-right: 10vw;}
+.projectstudio > .text {color: white;font-family: 'Noto Sans KR', sans-serif;}
+.projectstudio > .text > h2 {font-size: 2.5em;}
+.projectstudio > .text > p {font-size: 2em;padding-bottom: 3vh;}
+.projectstudio > .text > .explain{font-size: 1.4em;}
+.projectstudio > .text > a {
+  transition:all 1s ease;border:1px solid white;
+  color:white;text-decoration:none;font-size: 24px;font-weight: 700;
+  text-align:center;letter-spacing: 0.2em;
+  padding: 10px 45px;
+  border-radius: 33px;
+}
+.projectstudio > .text > a:hover{
+  transition:all 0.5s ease;
+  color: black;
+  background-color: white;
+}
+.slide{
+  width:600px;height: auto; 
+  overflow: hidden;
+  margin-right: 8vw;
+}
+.cleeping{
+  width: calc(100%*4);
+  display: flex; 
+  animation:slide 8s infinite; 
+  padding-left: 0;
+}
+.cleeping li{width: calc(100%/4);list-style:none;height: 300px;} 
+.cleeping li:nth-child(1){background: url('../img/cleeping1.png'); background-size: contain;}
+.cleeping li:nth-child(2){background:url('../img/cleeping2.png'); background-size: contain;}
+.cleeping li:nth-child(3){background: url('../img/cleeping3.png');background-size: cover;}
+.cleeping li:nth-child(4){background: url('../img/cleeping4.png');background-size: cover;}
+@keyframes slide {
+    0% {margin-left:0;}
+    10% {margin-left:0;}
+    25% {margin-left:-100%;}
+    35% {margin-left:-100%;} 
+    50% {margin-left:-200%;} 
+    75% {margin-left:-300%;}
+    85% {margin-left:-300%;} 
+    100% {margin-left:0;}
+    }
+.curve{
+  width: calc(100%*4);
+  display: flex; 
+  animation:slide 8s infinite; 
+  padding-left: 0;
+}
+.curve li{width: calc(100%/4);list-style:none;height: 300px;} 
+.curve li:nth-child(1){background: url('../img/curve1.png'); background-size: contain;}
+.curve li:nth-child(2){background:url('../img/curve2.png'); background-size: contain;}
+.curve li:nth-child(3){background: url('../img/curve3.png');background-size: cover;}
+.curve li:nth-child(4){background: url('../img/curve4.png');background-size: cover;}
+
+.macmiller{
+  width: calc(100%*4);
+  display: flex; 
+  animation:slide 8s infinite; 
+  padding-left: 0;
+}
+.macmiller li{width: calc(100%/4);list-style:none;height: 300px;} 
+.macmiller li:nth-child(1){background: url('../img/mac1.png'); background-size: contain;}
+.macmiller li:nth-child(2){background:url('../img/mac2.png'); background-size: contain;}
+.macmiller li:nth-child(3){background: url('../img/mac3.png');background-size: cover;}
+.macmiller li:nth-child(4){background: url('../img/mac4.png');background-size: cover;}
+
+.blackskirt{
+  width: calc(100%*4);
+  display: flex; 
+  animation:slide 8s infinite; 
+  padding-left: 0;
+}
+.blackskirt li{width: calc(100%/4);list-style:none;height: 300px;} 
+.blackskirt li:nth-child(1){background: url('../img/bs1.png'); background-size: contain;}
+.blackskirt li:nth-child(2){background:url('../img/bs2.png'); background-size: contain;}
+.blackskirt li:nth-child(3){background: url('../img/bs3.png');background-size: cover;}
+.blackskirt li:nth-child(4){background: url('../img/bs4.png');background-size: cover;}

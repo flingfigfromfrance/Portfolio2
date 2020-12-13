@@ -1,0 +1,535 @@
+* {
+    margin:0; padding:0;
+    line-height: 1;
+    font-family: 'SpoqaHanSans-kr'/*'Work Sans', 'Noto Sans KR', sans-serif*/; 
+} 
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+.clear{
+    clear: both;height: 0px;overflow: hidden;
+}
+#wrap {
+    position: relative;
+    min-width: 1000px; /* 최소넓이 */
+    margin-left: auto;
+    margin-right: auto;
+}
+header {
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    z-index: 100;
+    background-color: rgba(255,255,255,0.6);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+header .head {
+    width: 70%;
+    position: relative;
+    margin: 0 auto;
+    opacity: 20;
+}
+nav ul {
+    float: right;
+    padding-top: 8px;
+}
+nav li {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 50px;
+}
+nav li a{
+    text-decoration: none;
+    color: #b67dfb;
+}
+#logo {
+    float: left;
+}
+#logo img {
+    height: 40px;
+}
+ul li a{
+    padding: 5px 20px;
+    transition: 0.6s ease;
+}
+.a:hover {
+    color: rgb(241, 235, 143);
+    transition: all 0.3s;
+    background-color: rgb(112, 112, 112,0.5);
+    color: #fff;
+}
+ul li.active a{
+    background-color: rgb(68, 68, 68);
+    color: #fff;
+}
+#main{
+    position: relative;
+    width: 100%;
+    background-image: url('../img/back.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* 밑에 고정하는거*/
+    height: 100vh;
+}
+#main > h1{
+    position: absolute;
+    color: white;
+    top: 30%;
+    padding-left: 220px;
+    font-size: 80px;
+    font-weight: 500;
+}
+#maintext{
+    color: white;
+    position: absolute;
+    top: 38%;
+}
+#maintext-bottom{
+    position:absolute;
+    bottom:6.5%;
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+    /* padding-top: 330px; */
+    padding-left: 220px;
+    line-height: 15px;
+
+}
+/* about */
+#about{
+    height: 1050px;
+    background-color: #FDFDFD;
+}
+.abouttext{
+    background-color: #FDFDFD;
+    padding-top: 200px;
+    text-align: center;
+}
+.abouttext>p{
+    padding-top: 60px;
+    font-size: 25px;
+    font-weight: 100;
+    color: rgb(87, 87, 87);
+}
+.aboutinner{
+    text-align: center;
+}
+.aboutinner ul{
+    padding-top: 250px;
+    /*padding-left: 350px;*/
+    text-align: center;
+    display: inline-block;
+}
+.aboutinner ul li{
+    float: left;
+    list-style: none;
+    padding-left: 30px; 
+    padding-right: 30px; 
+    border-right: solid 1.5px rgb(240, 188, 59);
+    font-size: 25px;
+}
+.aboutinner ul li:nth-child(3){
+    border: none;
+}
+.aboutinner ul li p{
+    font-size: 50px;
+}
+.aboutinner ul li span{
+    color: rgb(78, 78, 78);
+}
+.aboutimg{
+    background-image: url(../img/woman.jpeg);height:870px; opacity: 100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.aboutimg>div>p{
+    font-weight: 200;
+    color: white;
+    font-size: 70px;
+    padding-top: 450px;
+    padding-bottom: 360px;
+    text-align: center;
+    word-spacing: 130px;
+}
+.aboutimg>div{
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.aboutcurve{
+    height: 1000px;
+    background-color: #FDFDFD;
+}
+#maintext{
+    padding-left: 225px;
+    font-size: 40px;
+    font-weight: 200;
+}
+.maintitle{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 45px;
+    color: black;
+}
+#maintext2{
+    padding-top: 150px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 40px;
+}
+.about-list{
+    text-align: center;
+}
+.about-list ul{
+    padding-top: 150px;
+    display: inline-block;
+}
+.about-list ul li{
+    float: left;
+    list-style: none;
+    padding-left: 140px; 
+    padding-right: 140px; 
+    font-weight: 600;
+    font-size: 27px;
+}
+.about-list ul li img{
+    padding-bottom: 20px;
+}
+#aboutcurve-div{
+    text-align: center;
+    padding-top: 50px;
+    position: relative;
+}
+#aboutcurve-gif{
+    width: 290px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+
+}
+.aboutmiddle{
+    height: 1000px;
+    position: relative;
+    width: 100%;
+    background-image: url('../gif/background.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#aboutmiddletext{
+    padding-top: 620px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+}
+.aboutcurve2{
+    height: 1100px;
+    background-color: #FDFDFD;
+}
+#abouttext{
+    padding-top: 70px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+}
+.abouttext-wrap{
+    text-align: center;
+}
+.abouttext-ex{
+    padding-top: 100px;
+    display: inline-block;
+}
+.abouttext-ex li{
+    float: left;
+    list-style: none;
+    padding-left: 30px;
+    padding-top: 150px;
+}
+.abouttext-ex li:nth-child(4){
+    padding-top: 0;
+}
+.abouttext-ex li:nth-child(4) img{border-radius: 25px;}
+.abouttext-ex li:last-child{
+    text-align: left;
+    line-height: 20px;
+}
+.service-voice{
+    margin: 0 auto;
+    padding-top: 40px;
+    width: 700px;
+}
+.service-voice img{
+    border-radius: 25px;
+}
+#voice-gif{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+.aboutcurve ul li{
+    list-style: none;
+    float: left;
+}
+#voice-title td span{
+    font-size: 20px;
+    font-weight: 600;
+    padding-right: 10px;
+}
+#voice-title{
+    padding-bottom: 50px;
+    padding-left: 30px;
+}
+#voice-text{
+    font-size: 15px;
+    padding-bottom: 50px;
+}
+#voice-text td{
+    line-height: 17px;
+}
+#voice-bar{
+    padding-bottom: 30px;
+}
+.service-voice ul li:nth-child(2){
+    padding-left: 90px;
+    padding-top: 120px;
+}
+#voice-menu{
+    padding-right: 90px;
+}
+#voice-icon{
+    padding-right: 90px;
+}
+.voice-background{
+    background-image: url(../img/back3.png);height:870px; opacity: 100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.voice-background div{
+    text-align: center;
+    padding-top: 300px;
+}
+.voice-background ul{
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+    display: inline-block;
+}
+.voice-background ul li{
+    list-style: none;
+    float: left;
+}
+#bg-text1{
+    padding-right: 100px;
+    padding-top: 120px;
+}
+#bg-text2{
+    padding-right: 100px;
+}
+#bg-text3{
+    padding-top: 120px;
+}
+.voicepost li img{
+    border-radius: 25px;
+}
+.voicepost{
+    height: 900px;
+    background-color: #FDFDFD;
+    text-align: center;
+}
+.voicepost ul{
+    display: inline-block;
+    padding-top: 100px;
+}
+.voicepost ul li{
+    list-style: none;
+    float: left;
+    padding-left: 30px;
+    padding-right: 250px;
+    text-align: left;
+}
+.voicepost ul li dl dt{
+    font-size: 45px;
+    font-weight: 700;
+    padding-top: 200px;
+    padding-bottom: 80px;
+}
+.voicepost ul li dl dd{
+    font-weight: 400;
+    font-size: 17px;
+    padding-top: 10px;
+}
+.voicepost ul li:nth-child(2){
+    padding-left: 50px;
+    padding-right: 0;
+}
+.voiceposts{
+    height: 900px;
+    background-color: #FDFDFD;
+}
+.voiceposts ul{
+    padding-top: 150px;
+    width: 1220px;
+    margin: 0 auto;
+}
+.voiceposts ul li{
+    float: left;
+    list-style: none;
+    padding-right: 200px;
+}
+.voiceposts ul li:nth-child(3){
+    padding-right: 0;
+}
+.voiceposts ul li img{
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+.diary{
+    height: 900px;
+    background-color: #b67dfb;
+    text-align: center;
+}
+.diary h2{
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 100px;
+}
+.diary div{
+    text-align: center;
+}
+.diary ul{
+    padding-top: 70px;
+    display: inline-block;
+    color: white;
+}
+.diary ul li{
+    float: left;
+    list-style: none;
+    text-align: left;
+}
+.diary ul li img{
+    border-radius: 25px;
+}
+.diary ul li:nth-child(2){
+    padding-left: 200px;
+    padding-top: 100px;
+}
+.diary ul li dl dt{
+    font-weight: 600;
+    font-size: 22px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.diary ul li dl dd{
+    padding-top: 10px;
+}
+.messenger{
+    height: 900px;
+    background-color: #FDFDFD;
+    text-align: center;
+}
+.messenger ul{
+    padding-top: 150px;
+    display: inline-block;
+}
+.messenger ul li{
+    float: left;
+    list-style: none;
+    text-align: left;
+}
+.messenger ul li img{
+    border-radius: 25px;
+}
+.messenger ul li:first-child{
+    padding-right: 150px;
+}
+.messenger ul li dl dt{
+    font-size: 45px;
+    font-weight: 700;
+    padding-top: 160px;
+    padding-bottom: 80px;
+}
+.messenger ul li dl dd{
+    font-weight: 400;
+    font-size: 17px;
+    padding-top: 10px;
+}
+.lastpage{
+    width: 100%;
+    background-image: url('../img/footerimg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+.lastpage p{
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    position: absolute;
+    top: 40%;
+    right: 8%;
+    line-height: 40px;
+}
+.lastpage h1{
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    right: 11%;
+    top: 32%;
+}
+.footerimg{
+    background-image: url('../img/mockup.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 280vh;
+}
+.curvevideo{
+    height: 1200px;
+    background-color: #FDFDFD;
+    text-align: center;
+}
+.curvevideo h2{
+    padding-top: 100px;
+    padding-bottom: 60px;
+    font-weight: 700;
+    font-size: 45px;
+}
+footer{
+    position: relative;
+    text-align: center;
+    background-color:#39353d;
+    height: 400px;
+    color: white;
+}
+footer div{
+   padding-top: 50px;
+   padding-bottom: 20px;
+}
+footer ul{
+    display: inline-block;
+    padding-top: 30px;
+}
+footer ul li{
+    float: left;
+    list-style: none;
+    padding-right: 220px;
+}
+footer ul li:nth-child(2){
+    padding-left: 25px;
+}
+footer ul li:last-child{
+    padding-right:0;
+}
+.footer-name{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+footer p{
+    position: absolute;
+    left:50%; transform:translateX(-50%);
+    bottom: 15px;
+    font-size: 12px;
+}
